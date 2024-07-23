@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1909.0, 1319.0 ],
+		"rect" : [ 34.0, 87.0, 1724.0, 889.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 34.0, 79.0, 389.0, 300.0 ],
+						"rect" : [ 134.0, 159.0, 389.0, 300.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -977,6 +977,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.094117647058824, 0.76078431372549, 0.294117647058824, 1.0 ],
 					"id" : "obj-21",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -1993,8 +1994,8 @@
 									"id" : "obj-2",
 									"maxclass" : "newobj",
 									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "jit_matrix", "" ],
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
 									"patching_rect" : [ 50.0, 198.0, 137.0, 22.0 ],
 									"text" : "cv.jit.resize @size 16 16"
 								}
@@ -2865,10 +2866,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "cv.jit.resize.mxo",
-				"type" : "iLaX"
-			}
-, 			{
 				"name" : "fluid.buf2list.mxo",
 				"type" : "iLaX"
 			}

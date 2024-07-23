@@ -112,3 +112,5 @@ s.waitForBoot{
 	PlotXYColor.fromFluidDataSet(trainingData,trainingLabels,headerArray:headers.asArray)
 }
 )
+
+Platform.userExtensionDir.openOS;

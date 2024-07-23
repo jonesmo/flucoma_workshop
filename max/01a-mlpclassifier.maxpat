@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1920.0, 1319.0 ],
+		"rect" : [ 654.0, 201.0, 1096.0, 763.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -174,12 +174,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-54",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 561.744990885257721, 561.48725563287735, 110.000000894069672, 22.0 ],
-					"text" : "predictpoint oboe"
+					"patching_rect" : [ 561.744990885257721, 561.48725563287735, 110.000000894069672, 35.0 ],
+					"text" : "predictpoint trombone"
 				}
 
 			}
@@ -414,6 +415,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.094117647058824, 0.76078431372549, 0.294117647058824, 1.0 ],
 					"id" : "obj-1",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -443,6 +445,7 @@
 								"filename" : "Olencki-TenTromboneLongTones-M.wav",
 								"filekind" : "audiofile",
 								"id" : "u950002097",
+								"selection" : [ 0.747352496217852, 1.0 ],
 								"loop" : 0,
 								"content_state" : 								{
 
@@ -742,14 +745,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "Harker-DS-TenOboeMultiphonics-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Olencki-TenTromboneLongTones-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
