@@ -1,6 +1,12 @@
 // audio rate version
 
-~buf = Buffer.read(s,FluidFilesPath("Nicol-LoopE-M.wav"));
+~buf = Buffer.read(s, "/Users/mej/Documents/Max 8/Packages/FluidCorpusManipulation/media/Nicol-LoopE-M.wav");
+
+~buf.play;
+~buf.free;
+
+Platform.userExtensionDir.openOS;
+FluidDataSet.version;
 
 (
 {
@@ -34,6 +40,7 @@ fork({
 
 // listen to the original
 ~drums.play;
+~drums.free;
 
 // add extra pop to the drums by using the AmpFeature envelope
 (
@@ -54,3 +61,5 @@ fork({
     sig * amp_feature.dbamp
 }.play;
 )
+
+s.freeAll;
