@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 5,
+			"minor" : 6,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1203.0, 929.0 ],
+		"rect" : [ 34.0, 87.0, 1203.0, 846.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -131,14 +131,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ -11.0, -1129.0, 1345.0, 929.0 ],
+						"rect" : [ 134.0, 87.0, 1345.0, 846.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -166,6 +166,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-23",
@@ -196,7 +197,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 249.333333333333314, 828.0, 50.0, 22.0 ],
-									"text" : "100"
+									"text" : "116"
 								}
 
 							}
@@ -223,8 +224,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 5,
+											"minor" : 6,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -661,7 +662,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 444.5, 834.869123220443726, 50.0, 22.0 ],
-									"text" : "84"
+									"text" : "17"
 								}
 
 							}
@@ -1143,8 +1144,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 5,
+											"minor" : 6,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1360,8 +1361,8 @@
 													"id" : "obj-41",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 9,
-													"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
+													"numoutlets" : 10,
+													"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int", "" ],
 													"patching_rect" : [ 507.422002077102661, 165.833340406417847, 103.0, 22.0 ],
 													"text" : "info~ sound"
 												}
@@ -1573,6 +1574,7 @@
 											"parameter_longname" : "live.gain~[3]",
 											"parameter_mmax" : 6.0,
 											"parameter_mmin" : -70.0,
+											"parameter_modmode" : 0,
 											"parameter_shortname" : "live.gain~",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4
@@ -1586,6 +1588,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.094117647058824, 0.76078431372549, 0.294117647058824, 1.0 ],
 									"id" : "obj-38",
 									"local" : 1,
 									"maxclass" : "ezdac~",
@@ -2228,14 +2231,14 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 220.0, 87.0, 1206.0, 929.0 ],
+						"rect" : [ 220.0, 87.0, 1206.0, 846.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2263,7 +2266,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-5",
@@ -2272,7 +2274,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 907.0, 627.0, 50.0, 22.0 ],
-									"text" : "100"
+									"text" : "116"
 								}
 
 							}
@@ -2366,7 +2368,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 399.5, 865.869123220443726, 50.0, 22.0 ],
-									"text" : "35"
+									"text" : "19"
 								}
 
 							}
@@ -2811,11 +2813,11 @@
 								"box" : 								{
 									"id" : "obj-26",
 									"maxclass" : "newobj",
-									"numinlets" : 7,
-									"numoutlets" : 7,
-									"outlettype" : [ "", "", "", "", "", "", "" ],
-									"patching_rect" : [ 154.0, 417.0, 579.0, 22.0 ],
-									"text" : "route 0 1 2 3 4 5"
+									"numinlets" : 8,
+									"numoutlets" : 8,
+									"outlettype" : [ "", "", "", "", "", "", "", "" ],
+									"patching_rect" : [ 154.0, 417.0, 541.0, 22.0 ],
+									"text" : "route 0 1 2 3 4 5 6"
 								}
 
 							}
@@ -2914,8 +2916,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 5,
-											"revision" : 5,
+											"minor" : 6,
+											"revision" : 4,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3131,8 +3133,8 @@
 													"id" : "obj-41",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
-													"numoutlets" : 9,
-													"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int" ],
+													"numoutlets" : 10,
+													"outlettype" : [ "float", "list", "float", "float", "float", "float", "float", "", "int", "" ],
 													"patching_rect" : [ 507.422002077102661, 165.833340406417847, 103.0, 22.0 ],
 													"text" : "info~ sound"
 												}
@@ -3344,6 +3346,7 @@
 											"parameter_longname" : "live.gain~[2]",
 											"parameter_mmax" : 6.0,
 											"parameter_mmin" : -70.0,
+											"parameter_modmode" : 0,
 											"parameter_shortname" : "live.gain~",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4
@@ -3357,6 +3360,7 @@
 							}
 , 							{
 								"box" : 								{
+									"color" : [ 0.094117647058824, 0.76078431372549, 0.294117647058824, 1.0 ],
 									"id" : "obj-38",
 									"local" : 1,
 									"maxclass" : "ezdac~",
@@ -4168,8 +4172,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4715,7 +4719,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 88.264151513576508, 264.976881086826324, 114.405664324760437, 22.0 ],
-					"text" : "915"
+					"text" : "885"
 				}
 
 			}
@@ -4802,8 +4806,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5246,8 +5250,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 5,
-							"revision" : 5,
+							"minor" : 6,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5687,14 +5691,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "fav-max.js",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/jsui",
-				"patcherrelativepath" : "../../../Max 8/Packages/FluidCorpusManipulation/jsui",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/jsui",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fluid.audiofilesin.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
-				"patcherrelativepath" : "../../../Max 8/Packages/FluidCorpusManipulation/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5729,7 +5733,7 @@
 , 			{
 				"name" : "fluid.concataudiofiles.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
-				"patcherrelativepath" : "../../../Max 8/Packages/FluidCorpusManipulation/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -5752,7 +5756,7 @@
 , 			{
 				"name" : "fluid.waveform~.js",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/jsui",
-				"patcherrelativepath" : "../../../Max 8/Packages/FluidCorpusManipulation/jsui",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/jsui",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

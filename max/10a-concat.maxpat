@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 0,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 914.0, 983.0 ],
+		"rect" : [ 34.0, 87.0, 1234.0, 845.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,42 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 995.0, 786.092308878898621, 150.0, 47.0 ],
+					"text" : "we could use this to envelope each slice by the envelope of the target..."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1000.0, 756.0, 170.0, 22.0 ],
+					"text" : "-157.226598 -313.071195"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1031.0, 717.0, 89.0, 22.0 ],
+					"text" : "fluid.loudness~"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-12",
 					"maxclass" : "message",
@@ -96,7 +132,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 0,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -442,8 +478,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.5, 42.69231128692627, 170.0, 22.0 ],
-					"text" : "/Users/ted/Desktop/favs-mono"
+					"patching_rect" : [ 28.5, 42.69231128692627, 261.0, 22.0 ],
+					"text" : "/Users/mej/Music/ambisonic-test-sounds/stereo"
 				}
 
 			}
@@ -459,7 +495,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 0,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -965,7 +1001,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 0,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1356,6 +1392,7 @@
 							"parameter_longname" : "live.gain~[1]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -1383,6 +1420,7 @@
 							"parameter_longname" : "live.gain~",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 0,
 							"parameter_shortname" : "live.gain~",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -1432,6 +1470,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.094117647058824, 0.76078431372549, 0.294117647058824, 1.0 ],
 					"id" : "obj-62",
 					"local" : 1,
 					"maxclass" : "ezdac~",
@@ -1863,7 +1902,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 0,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2292,7 +2331,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 0,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2973,7 +3012,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 977.0, 371.0, 50.0, 22.0 ],
-					"text" : "6"
+					"text" : "5"
 				}
 
 			}
@@ -2992,7 +3031,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-57",
-					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -3648,6 +3686,15 @@
 				"patchline" : 				{
 					"destination" : [ "obj-41", 1 ],
 					"midpoints" : [ 861.5, 636.0, 782.0, 636.0 ],
+					"order" : 1,
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
 					"source" : [ "obj-50", 0 ]
 				}
 
@@ -3705,6 +3752,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-40", 0 ],
 					"source" : [ "obj-71", 0 ]
 				}
@@ -3752,7 +3806,7 @@
 		"dependency_cache" : [ 			{
 				"name" : "fluid.audiofilesin.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3783,7 +3837,7 @@
 , 			{
 				"name" : "fluid.concataudiofiles.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -3797,6 +3851,10 @@
 			}
 , 			{
 				"name" : "fluid.list2buf.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "fluid.loudness~.mxo",
 				"type" : "iLaX"
 			}
 , 			{

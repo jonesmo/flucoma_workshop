@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1906.0, 1319.0 ],
+		"rect" : [ 34.0, 87.0, 1852.0, 846.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 467.741921544075012, 487.096759676933289, 83.225803971290588, 22.0 ],
-					"text" : "0."
+					"text" : "0.206258"
 				}
 
 			}
@@ -309,6 +309,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.094117647058824, 0.76078431372549, 0.294117647058824, 1.0 ],
 					"id" : "obj-14",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -760,14 +761,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "Harker-DS-TenOboeMultiphonics-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Olencki-TenTromboneLongTones-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}

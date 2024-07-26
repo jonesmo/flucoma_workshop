@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1909.0, 1319.0 ],
+		"rect" : [ 34.0, 87.0, 1852.0, 846.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -236,6 +236,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.094117647058824, 0.76078431372549, 0.294117647058824, 1.0 ],
 					"id" : "obj-14",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -290,7 +291,7 @@
 								"filename" : "Harker-DS-TenOboeMultiphonics-M.wav",
 								"filekind" : "audiofile",
 								"id" : "u634010823",
-								"selection" : [ 0.403508771929825, 0.47953216374269 ],
+								"selection" : [ 0.681286549707602, 0.940058479532164 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -619,14 +620,14 @@
 		"dependency_cache" : [ 			{
 				"name" : "Harker-DS-TenOboeMultiphonics-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Nicol-LoopE-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}

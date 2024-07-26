@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 2,
+			"revision" : 4,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1188.0, 983.0 ],
+		"rect" : [ 34.0, 87.0, 1188.0, 846.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -53,13 +53,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-46",
-					"linecount" : 5,
+					"linecount" : 6,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 659.0, 730.0, 174.0, 76.0 ],
-					"text" : "-55.155041 9.650621 27.284096 13.287583 6.321803 0.155326 1.30213 0.812619 1.394913 1.585754 -0.421781 -0.410031 5.712279"
+					"patching_rect" : [ 659.0, 730.0, 174.0, 89.0 ],
+					"text" : "42.452932 7.128751 -9.326364 -8.322868 -8.2 -5.369661 -5.568474 -7.058837 -13.144463 -19.274507 -16.30959 -5.198687 6.197813"
 				}
 
 			}
@@ -72,7 +72,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1056.5, 660.0, 199.0, 76.0 ],
-					"text" : "-0.973464 2.11611 -1.221255 3.216152 -1.826947 2.49704 -0.602873 1.534628 0.296569 -0.006842 1.394263 -0.700571 2.347272"
+					"text" : "0.73387 0.384628 0.035766 0.387812 0.270983 0.454579 0.800087 0.28728 0.059284 -0.79137 -0.095765 0.494067 0.854699"
 				}
 
 			}
@@ -83,8 +83,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 90.0, 238.0, 400.0, 22.0 ],
-					"text" : "\"/Users/ted/Documents/Max 8/Packages/FluidCorpusManipulation/media\""
+					"patching_rect" : [ 90.0, 238.0, 403.0, 22.0 ],
+					"text" : "\"/Users/mej/Documents/Max 8/Packages/FluidCorpusManipulation/media\""
 				}
 
 			}
@@ -251,6 +251,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.094117647058824, 0.76078431372549, 0.294117647058824, 1.0 ],
 					"id" : "obj-30",
 					"local" : 1,
 					"maxclass" : "ezdac~",
@@ -409,7 +410,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -747,8 +748,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 35.285123646259308, 116.246026217937469, 170.0, 22.0 ],
-					"text" : "/Users/ted/Desktop/favs-mono"
+					"patching_rect" : [ 35.285123646259308, 116.246026217937469, 318.0, 22.0 ],
+					"text" : "/Users/mej/Documents/Arduino/552_project_1/sound_files"
 				}
 
 			}
@@ -815,6 +816,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-91",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -1088,7 +1090,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 803.0, 602.0, 91.0, 22.0 ],
-					"text" : "knearest \"300\""
+					"text" : "knearest \"249\""
 				}
 
 			}
@@ -1106,6 +1108,7 @@
 			}
 , 			{
 				"box" : 				{
+					"color" : [ 0.094117647058824, 0.76078431372549, 0.294117647058824, 1.0 ],
 					"id" : "obj-62",
 					"local" : 1,
 					"maxclass" : "ezdac~",
@@ -1294,7 +1297,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1660,7 +1663,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 6,
-							"revision" : 2,
+							"revision" : 4,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2831,70 +2834,70 @@
 		"dependency_cache" : [ 			{
 				"name" : "Constanzo-PreparedSnare-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Green-Box639.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Green-Box641.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Nicol-LoopE-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-ASWINE-ScratchySynth-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-AaS-SynthTwoVoices-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-AaS-VoiceQC-B2K-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-CEL-GlitchyMusicBoxMelo.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Tremblay-UW-ComplexDescent-M.wav",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/media",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/media",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/media",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fluid.audiofilesin.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -2925,7 +2928,7 @@
 , 			{
 				"name" : "fluid.concataudiofiles.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
-				"patcherrelativepath" : "../../../../../Max 8/Packages/FluidCorpusManipulation/patchers",
+				"patcherrelativepath" : "../../../../Documents/Max 8/Packages/FluidCorpusManipulation/patchers",
 				"type" : "JSON",
 				"implicit" : 1
 			}
