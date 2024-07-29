@@ -1,4 +1,5 @@
 *.wav.reapeaks
+*.wav
 promo
 .DS_Store
 python/env-nmf

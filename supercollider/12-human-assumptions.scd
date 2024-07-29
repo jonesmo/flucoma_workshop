@@ -1,5 +1,9 @@
 ~src = Buffer.read(s,FluidFilesPath("Tremblay-ASWINE-ScratchySynth-M.wav"));
+~src.play;
 
+// look at a diagram of pitch analysis
+// blue is detected pitch
+// orange is algorithm's confidence about pitch
 (
 fork{
 	~pitchbuf = Buffer(s);
@@ -12,9 +16,10 @@ fork{
 )
 
 // straight average
+// (median might be better than this mean)
 (
 ~statsbuf = Buffer(s);
-FluidBufStats.processBlocking(s,~pitchbuf,numChans:1,stats:~statsbuf,action:{
+FluidBufStats.processBlocking(s,~pitchbuf,numChans:1,stats:~statsbuf,select:[\mean],action:{
 	~statsbuf.loadToFloatArray(action:{
 		arg fa;
 		FluidBufStats.stats.do{
@@ -31,9 +36,10 @@ FluidBufStats.processBlocking(s,~pitchbuf,numChans:1,stats:~statsbuf,action:{
 )
 
 // weighted average using pitch confidence for weights
+// use confidence curve as our weights
 (
 ~weightsbuf = Buffer(s);
-FluidBufCompose.processBlocking(s,~pitchbuf,startChan:1,numChans:1,destination:~weightsbuf);
+FluidBufCompose.processBlocking(s,~pitchbuf,startChan:1,numChans:1,destination:~weightsbuf);  // copy confidence curve
 FluidBufStats.processBlocking(s,~pitchbuf,numChans:1,stats:~statsbuf,weights:~weightsbuf,action:{
 	~statsbuf.loadToFloatArray(action:{
 		arg fa;
@@ -83,9 +89,10 @@ FluidBufNMF.processBlocking(s,~src,resynth:~resynth,resynthMode:1,bases:~bases,c
 
 ~resynth.play;
 
-FluidBufCompose.processBlocking(s,~resynth,startChan:0,numChans:1,destination:~src);
+// rewrites ~src buffer to fill it with just the one component
+FluidBufCompose.processBlocking(s,~resynth,startChan:1,numChans:1,destination:~src);
 
-// eyeball it
+// eyeball it rather than doing fancy analyses...
 (
 {
 	var sig = PlayBuf.ar(1,~src,BufRateScale.ir(~src));

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "flucoma-python-nmf"
+version = "0.1.0"
+description = ""
+authors = ["Molly Jones <molly.jones@spantree.net>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+librosa = "^0.10.2"
+matplotlib = "^3.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

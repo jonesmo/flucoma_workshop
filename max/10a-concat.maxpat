@@ -40,12 +40,60 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 643.0, 26.0, 62.0, 22.0 ],
+					"text" : "writewave"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-19",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 942.0, 54.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 928.0, 123.0, 113.0, 22.0 ],
+					"text" : "record~ recording 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"patching_rect" : [ 716.0, 48.0, 146.0, 22.0 ],
+					"text" : "buffer~ recording 30000 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-47",
 					"linecount" : 3,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 995.0, 786.092308878898621, 150.0, 47.0 ],
+					"patching_rect" : [ 995.0, 786.092308878898621, 153.0, 47.0 ],
 					"text" : "we could use this to envelope each slice by the envelope of the target..."
 				}
 
@@ -58,7 +106,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1000.0, 756.0, 170.0, 22.0 ],
-					"text" : "-157.226598 -313.071195"
+					"text" : "-39.690586 -30.818766"
 				}
 
 			}
@@ -478,8 +526,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 28.5, 42.69231128692627, 261.0, 22.0 ],
-					"text" : "/Users/mej/Music/ambisonic-test-sounds/stereo"
+					"patching_rect" : [ 28.5, 42.69231128692627, 187.0, 22.0 ],
+					"text" : "/Users/mej/Documents/bird_wavs"
 				}
 
 			}
@@ -3012,7 +3060,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 977.0, 371.0, 50.0, 22.0 ],
-					"text" : "5"
+					"text" : "23"
 				}
 
 			}
@@ -3031,6 +3079,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-57",
+					"int" : 1,
 					"maxclass" : "gswitch2",
 					"numinlets" : 2,
 					"numoutlets" : 2,
@@ -3481,6 +3530,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-117", 1 ],
 					"source" : [ "obj-191", 0 ]
 				}
@@ -3527,6 +3583,13 @@
 					"destination" : [ "obj-9", 0 ],
 					"midpoints" : [ 561.5, 259.098768901824997, 561.5, 259.098768901824997 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -3585,7 +3648,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-62", 1 ],
+					"destination" : [ "obj-15", 0 ],
 					"order" : 0,
 					"source" : [ "obj-36", 0 ]
 				}
@@ -3593,7 +3656,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-62", 0 ],
+					"destination" : [ "obj-62", 1 ],
 					"order" : 1,
 					"source" : [ "obj-36", 0 ]
 				}
@@ -3601,7 +3664,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-62", 1 ],
+					"destination" : [ "obj-62", 0 ],
+					"order" : 2,
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
 					"order" : 0,
 					"source" : [ "obj-37", 0 ]
 				}
@@ -3609,8 +3680,16 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-62", 0 ],
+					"destination" : [ "obj-62", 1 ],
 					"order" : 1,
+					"source" : [ "obj-37", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"order" : 2,
 					"source" : [ "obj-37", 0 ]
 				}
 
